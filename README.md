@@ -19,7 +19,7 @@ CREATE TABLE Clients (
     FullName NVARCHAR(100) NOT NULL,
     BirthDate DATE NOT NULL,
     PhoneNumber NVARCHAR(15),
-    Email NVARCHAR(100) UNIQUE,
+    Email NVARCHAR(100),
     RegistrationDate DATE NOT NULL,
     PasswordHash NVARCHAR(255) NOT NULL
 );
