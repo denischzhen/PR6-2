@@ -28,5 +28,5 @@ CREATE TABLE Clients (
 
 
 ## Результаты выполнения тестов
-![image](results.png)
+![image](results.jpg)
 
