@@ -24,6 +24,6 @@ CREATE TABLE Clients (
     PasswordHash NVARCHAR(255) NOT NULL
 );
 ```
-![image](Снимок экрана 2025-03-31 120812.png)
+![image](bd.png)
 
 
