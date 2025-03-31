@@ -1,0 +1,30 @@
+﻿<Window x:Class="PR6_2.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="420" Width="350" Background="#2E2E2E"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Вход в систему" FontFamily="Roboto Medium" FontSize="22" FontWeight="Bold"
+               Foreground="#FFA500" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <TextBlock Text="Номер телефона или эл. почта:" Foreground="#FFA500"/>
+            <TextBox Name="LoginTextBox" Width="260" Height="34" x:FieldModifier="public"/>
+
+            <TextBlock Text="Пароль:" Foreground="#FFA500"/>
+
+            <StackPanel Orientation="Vertical">
+                <PasswordBox Name="PasswordBox" Width="260" Height="34" x:FieldModifier="public"/>
+                <TextBox Name="VisiblePasswordBox" Width="260" Visibility="Collapsed" x:FieldModifier="public"/>
+
+                <TextBlock Name="TogglePasswordText" Text="Показать пароль 👁" Foreground="#FFA500" Cursor="Hand"
+                   HorizontalAlignment="Left" Margin="5,5,0,0"
+                   MouseLeftButtonDown="TogglePassword_Click"/>
+            </StackPanel>
+            <Button Content="Войти" Background="#FFA500" Foreground="White" Click="LoginButton_Click" Cursor="Hand" Height="31" Width="272"/>
+            <TextBlock Text="Нет аккаунта?" HorizontalAlignment="Center" Margin="10,5,10,5" Foreground="#FFA500"/>
+            <Button Content="Зарегистрироваться" Background="#555555" Click="RegisterButton_Click" Foreground="White" Height="28" Width="275"/>
+        </StackPanel>
+    </Grid>
+</Window>
